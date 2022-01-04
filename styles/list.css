@@ -28,13 +28,14 @@ a {
 	color: black;
 }
 content div {
-	background-color:lightgray;
 	margin : 2%;
 	width:40%;
 }
-content div:hover {
+
+/* content div:hover {
 	background-color: rosybrown;
-}
+} */
+
 content div img {
 	height:200px;
 	width:250px;
@@ -68,9 +69,9 @@ footer img{
 footer p {
    align-self: flex-end;
 }
-map {
+/* map {
 	display: none;
-}
+} */
 .row{
 	display: flex;
 	flex-direction: row;
@@ -79,15 +80,41 @@ map {
 .image {
 	display: flex;
 	flex-direction: row;
+	background-color:lightgray;
+	text-decoration: none;
 } 
 
+.image:hover {
+	background-color: rosybrown;
+}
 .btn-login {
 	height: 30px;
 	margin-top:15px
 }
-map:active {
+/* map:active {
 	display: block;
 }
 map:visited {
 	display:block;
+} */
+
+.orange-color {
+	color: orange;
+}
+
+.orange-half-color {
+	background-color: linear-gradient(orange,white);
+}
+
+@media only screen and (max-width : 576px) {
+	header {
+		height: 60px;
+		width: 100%;
+	}
+	footer {
+		bottom: 0;
+		height: 60px;
+		width: 100%;
+	}
+
 }

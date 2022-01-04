@@ -59,7 +59,7 @@ input:focus {
 	-webkit-transition: .2s all;
 }
 .image img:hover {
-    -webkit-filter: brightness(60%);
+    -webkit-filter: brightness(10%);
 }
 .image img:hover+span {
 	visibility:visible;
@@ -70,13 +70,14 @@ span {
 	color: #f1f1f1;
 	display: flex;
 	justify-content: center;
-	
 }
+
 citycard {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	padding : 4%;
+	flex-wrap: wrap;
 }
 content a {
 	display: flex;
@@ -111,3 +112,18 @@ label {
 	width:150px;
 }
 
+@media only screen and (max-width : 576px) {
+	header {
+		height: 60px;
+	}
+	footer {
+		bottom: 0;
+		height: 60px;
+	}
+	citycard {
+		flex-wrap: wrap;
+	}
+	.image a{
+		margin-top: 20px;
+	}
+}
